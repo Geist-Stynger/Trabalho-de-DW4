@@ -21,25 +21,25 @@ function checkInputs() {
 if(usernameValue === '') {
     setErrorFor(username, 'O nome de usuário é obrigatório')
 } else{
-    setSucessFor(username)
+    setSuccessFor(username)
 }
 
 if(emailValue === '') {
     setErrorFor(email, 'O email do usuário é obrigatório')
 } else{
-    setSucessFor(email)
+    setSuccessFor(email)
 }
 
 if(passwordValue === '') {
     setErrorFor(password, 'Senha obrigatória')
 } else{
-    setSucessFor(password)
+    setSuccessFor(password)
 }
 
 if(passwordconfirmationValue === '') {
     setErrorFor(passwordconfirmation, 'senha obrigatória')
 } else{
-    setSucessFor(passwordconfirmation)
+    setSuccessFor(passwordconfirmation)
 }
 }
 
