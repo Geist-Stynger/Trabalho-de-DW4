@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const passwordConfirmation = document.getElementById('password-Confirmation');
+const passwordconfirmation = document.getElementById('password-confirmation');
 
 
 form.addEventListener('submit', (e) => {
@@ -15,7 +15,7 @@ function checkInputs() {
     const usernameValue = username.value;
     const emailValue = email.value;
     const passwordValue = password.value;
-    const passwordConfirmationValue = passwordConfirmation.value;
+    const passwordconfirmationValue = passwordconfirmation.value;
 
     
 if(usernameValue === '') {
@@ -36,10 +36,10 @@ if(passwordValue === '') {
     setSucessFor(password)
 }
 
-if(passwordConfirmationValue === '') {
-    setErrorFor(passwordConfirmation, 'senha obrigatória')
+if(passwordconfirmationValue === '') {
+    setErrorFor(passwordconfirmation, 'senha obrigatória')
 } else{
-    setSucessFor(passwordConfirmation)
+    setSucessFor(passwordconfirmation)
 }
 }
 
