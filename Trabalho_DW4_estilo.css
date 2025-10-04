@@ -7,11 +7,12 @@
     
     body {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     background: linear-gradient(135deg, #1565c0 0%, #1e88e5 50%, #42a5f5 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10%;
     }
     
     .container {
@@ -36,6 +37,7 @@
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
+    
     }
     
     .form-control label {
@@ -57,6 +59,7 @@
     top: 45px;
     right: 10px;
     visibility: hidden;
+    
     }
     
     .form-control small {
@@ -105,4 +108,16 @@
     .form-control.error small {
     visibility: visible;
     color: #e74c3c;
+    }
+    .CPF{
+         margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    display: none;
+    }
+    .CNPJ{
+         margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    display: none;
     }
