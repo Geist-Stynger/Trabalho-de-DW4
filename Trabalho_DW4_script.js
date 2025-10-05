@@ -40,13 +40,13 @@ function checkInputs() {
 if(inputFisicaValue === '') {
     setErrorFor(inputcpf, 'CPF obrigatório para continuar')
 } else {
-    setSuccessFor(inputFisica)
+    setSuccessFor(inputcpf)
 }
 
 if(inputJuridicaValue === '') {
     setErrorFor(inputcnpj, 'CNPJ obrigatório para continuar')
 } else {
-    setSuccessFor(inputJuridica)
+    setSuccessFor(inputcnpj)
 }
 
     
@@ -58,7 +58,9 @@ if(usernameValue === '') {
 
 if(emailValue === '') {
     setErrorFor(email, 'O email do usuário é obrigatório')
-} else{
+} else if (!checkEmail(emailValue)) {
+    setErrorFor(email, 'Digite um email válido')
+} else {
     setSuccessFor(email)
 }
 
@@ -70,7 +72,9 @@ if(passwordValue === '') {
 
 if(passwordconfirmationValue === '') {
     setErrorFor(passwordconfirmation, 'senha obrigatória')
-} else{
+} else if (passwordValue !== passwordconfirmationValue) {
+    setErrorFor(passwordconfirmation, 'As senhas não coincidem')
+} else {
     setSuccessFor(passwordconfirmation)
 }
 }
