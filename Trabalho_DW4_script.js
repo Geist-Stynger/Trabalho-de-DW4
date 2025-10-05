@@ -66,6 +66,8 @@ if(emailValue === '') {
 
 if(passwordValue === '') {
     setErrorFor(password, 'Senha obrigatória')
+} else if  (passwordValue.length < 8) {
+    setErrorFor(password, 'A senha tem que ter no mínimo 8 caracteres')
 } else{
     setSuccessFor(password)
 }
