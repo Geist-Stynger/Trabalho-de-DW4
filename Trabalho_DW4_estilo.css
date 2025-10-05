@@ -124,8 +124,7 @@
         display: none;
     }
     #fisica, #juridica {
-        transition: opacity 0.3 ease;
-        opacity: 0;
+        
         display: none;
     }
 
@@ -133,3 +132,4 @@
         display: block;
         opacity: 1;
     }
+    
