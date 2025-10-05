@@ -7,6 +7,8 @@ const radioFisica = document.getElementById('CPF_id');
 const radioJuridica = document.getElementById('CNPJ_id');
 const divFisica = document.getElementById('fisica');
 const divJuridica = document.getElementById('juridica');
+const inputcpf = document.getElementById('cpf');
+const inputcnpj = document.getElementById('cnpj')
 
 radioFisica.addEventListener('change', () => {
     if (radioFisica.checked) {
@@ -21,9 +23,6 @@ radioJuridica.addEventListener('change', () => {
     }
 });
 
-
-
-
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     
@@ -35,6 +34,20 @@ function checkInputs() {
     const emailValue = email.value;
     const passwordValue = password.value;
     const passwordconfirmationValue = passwordconfirmation.value;
+    const inputFisicaValue = inputcpf.value;
+    const inputJuridicaValue = inputcnpj.value;
+    
+if(inputFisicaValue === '') {
+    setErrorFor(inputcpf, 'CPF obrigatório para continuar')
+} else {
+    setSuccessFor(inputFisica)
+}
+
+if(inputJuridicaValue === '') {
+    setErrorFor(inputcnpj, 'CNPJ obrigatório para continuar')
+} else {
+    setSuccessFor(inputJuridica)
+}
 
     
 if(usernameValue === '') {
