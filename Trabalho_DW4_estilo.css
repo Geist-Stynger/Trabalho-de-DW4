@@ -113,11 +113,23 @@
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
-    display: none;
+    
     }
     .CNPJ{
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
-    display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    #fisica, #juridica {
+        transition: opacity 0.3 ease;
+        opacity: 0;
+        display: none;
+    }
+
+    #fisica.show, #juridica.show {
+        display: block;
+        opacity: 1;
     }

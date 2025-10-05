@@ -3,6 +3,25 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const passwordconfirmation = document.getElementById('password-confirmation');
+const radioFisica = document.getElementById('CPF_id');
+const radioJuridica = document.getElementById('CNPJ_id');
+const divFisica = document.getElementById('fisica');
+const divJuridica = document.getElementById('juridica');
+
+radioFisica.addEventListener('change', () => {
+    if (radioFisica.checked) {
+        divFisica.style.display = 'block';
+        divJuridica.style.display = 'none';
+    }
+});
+radioJuridica.addEventListener('change', () => {
+    if(radioJuridica.checked) {
+        divJuridica.style.display = 'block';
+        divFisica.style.display = 'none';
+    }
+});
+
+
 
 
 form.addEventListener('submit', (e) => {
