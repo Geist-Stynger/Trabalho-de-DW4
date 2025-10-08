@@ -1,59 +1,68 @@
-* {
+* {/* misael ta ligado */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     }
-    
+    /* misael ta ligado */
     body {
     width: 100%;
-    min-height: 100%;
-    background: linear-gradient(135deg, #1565c0 0%, #1e88e5 50%, #42a5f5 100%);
+    min-height: 100vh;
+    /* misael ta ligado */
+    /* Imagem da esquerda, Imagem da direita */
+    /* Substitua os URLs pelos caminhos das imagens */
+    background-image: url('https://i.pinimg.com/originals/d5/f2/9e/d5f29e35380a9831be4291529128062e.gif'), 
+    url('https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUycTYxNXRqNGszcmI4bzM5MGRoNTNwa3YyZGVwbno5Z2J0OXRzOGYwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Vbu9Ud0Z6ibwjxTZYQ/200w.gif');
+    /* Posição de cada imagem */
+    background-position: left center, right center;
+    /* Tamanho de cada imagem (50% da largura, 100% da altura) */
+    background-size: 50% 100%, 50% 100%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 20px;
     }
-    
+    /* misael ta ligado */
     .container {
-    background-color: #fafafa;
+    background-color: #5b0375;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 400px;
     max-width: 100%;
     overflow: hidden;
     }
-    
+    /* misael ta ligado */
     .header {
-    background-color: #eee;
+    background-color: #5d0374;
     padding: 20px;
     }
-    
+    /* misael ta ligado */
     .form {
     padding: 20px;
     }
-    
+    /* misael ta ligado */
     .form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
     
     }
-    
+    /* misael ta ligado */
     .form-control label {
     display: inline-block;
     margin-bottom: 5px;
     }
-    
+    /* misael ta ligado */
     .form-control input {
-    border: 2px solid #f0f0f0;
+    border: 2px solid #3a0101;
     display: block;
     border-radius: 10px;
     font-size: 14px;
     width: 100%;
     padding: 10px;
     }
-    
+    /* misael ta ligado */
     .form-control i {
     position: absolute;
     top: 45px;
@@ -61,14 +70,14 @@
     visibility: hidden;
     
     }
-    
+    /* misael ta ligado */
     .form-control small {
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
     }
-    
+    /* misael ta ligado */
     .form button {
     background-color: #e53935;
     border: 2px solid #e53935;
@@ -79,13 +88,13 @@
     padding: 10px;
     transition: background 0.3s ease;
     }
-    
+    /* misael ta ligado */
     .form button:hover {
     background-color: #c62828;
     }
     
     
-    
+    /* misael ta ligado */
     /*classes Error and Success chamadas no javascript*/
     .form-control.success input {
     border-color: #2ecc71;
@@ -94,7 +103,7 @@
     .form-control.error input {
     border-color: #e74c3c;
     }
-    
+    /* misael ta ligado */
     .form-control.success i.fa-check-circle {
     color: #2ecc71;
     visibility: visible;
@@ -127,7 +136,7 @@
         
         display: none;
     }
-
+/* misael ta ligado */
     #fisica.show, #juridica.show {
         display: block;
         opacity: 1;
